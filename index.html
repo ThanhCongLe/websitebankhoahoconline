@@ -1,361 +1,402 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website bán khóa học online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <title>Website khóa học</title>
+
+    <!-- MÔ TẢ: DÁN LINK BOOTSTRAP CSS BẠN TỰ LẤY VÀO ĐÂY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome: icon cho website (có thể tự lấy link trên mạng) -->
+    <!-- MÔ TẢ: DÁN LINK FONT AWESOME CSS VÀO ĐÂY NẾU MUỐN DÙNG ICON -->
+
+    <!-- CSS tự viết -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-danger py-2 fw-bold">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Logo" class="img-logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-nav">
-                    <li class="navbar-item">
-                        <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+
+    <!-- 1. THANH ĐIỀU HƯỚNG -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" class="img-logo">
+                <span>HỌC ONLINE</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        <a class="nav-link" href="#gioithieu">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#khoahoc">Khóa học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#giangvien">Giảng viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lienhe">Liên hệ</a>
                     </li>
                 </ul>
             </div>
-
-            </div>
-            </div>
-        </nav>
-
-    </header>
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Nhập từ khóa" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i></button>
-    </form>
-    <div class="container py-2">
-        <div id="carouselExampleAutoplaying" class="carousel slide" dta-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="Đăng ký khóa học online">
-                </div>
-                <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="Học online cùng chuyên gia">
-                </div>
-                <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="Danh mục khóa học online">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>   
-    <section>
-        <div class="container py-2">
-            <h1 class="visually-hidden">Website Bán Khóa Học Online Uy Tín</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Học đúng trọng tâm - làm được ngay</h2>
-                    <div style="text-align: justify;">
-                        <p>Bạn đang muốn học kỹ năng mới nhưng không biết bắt đầu từ đâu? Các khóa học của chúng tôi được thiết kế ngắn gọn, dễ hiểu, thực hành nhiều, giúp bạn nắm vững kiến thức và áp dụng ngay vào thực tế.</p>
-                        <p>Trong mỗi khóa học, bạn sẽ được hướng dẫn cụ thể thông qua các bài học trực quan, ví dụ thực tế và các bài tập thực hành. Thay vì chỉ học lý thuyết, bạn sẽ có cơ hội thực hành ngay trong quá trình học, tự mình giải quyết các tình huống và tạo ra sản phẩm cụ thể.</p>
-                    </div>
-                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-user-plus" style="color: rgb(249, 249, 249);"></i>Đằn ký để học ngay.
-                    </button>
+    </nav>
+
+
+    <!-- 2. ẢNH TRÌNH CHIẾU -->
+    <div id="anhTrinhChieu" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#anhTrinhChieu"
+                data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#anhTrinhChieu"
+                data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#anhTrinhChieu"
+                data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.co/1400x450/dc3545/ffffff?text=KHOA+HOC+ONLINE"
+                    class="d-block w-100" alt="Khóa học trực tuyến">
+                <div class="carousel-caption">
+                    <h2>Học tập mọi lúc, mọi nơi</h2>
+                    <p>Nâng cao kiến thức cùng các khóa học chất lượng.</p>
                 </div>
-                <div class="col-md-6"><img src="" alt="" class="w-100 pt-3">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://placehold.co/1400x450/343a40/ffffff?text=HOC+DI+DOI+VOI+HANH"
+                    class="d-block w-100" alt="Học đi đôi với hành">
+                <div class="carousel-caption">
+                    <h2>Học đúng trọng tâm</h2>
+                    <p>Thực hành để phát triển kỹ năng mỗi ngày.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://placehold.co/1400x450/198754/ffffff?text=PHAT+TRIEN+BAN+THAN"
+                    class="d-block w-100" alt="Phát triển bản thân">
+                <div class="carousel-caption">
+                    <h2>Đầu tư cho tương lai</h2>
+                    <p>Bắt đầu hành trình học tập của bạn hôm nay.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#anhTrinhChieu" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Ảnh trước</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#anhTrinhChieu" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Ảnh tiếp theo</span>
+        </button>
+    </div>
+
+
+    <!-- 3. GIỚI THIỆU CHÍNH -->
+    <section id="gioithieu" class="container py-5">
+        <h1 class="visually-hidden">Website học trực tuyến</h1>
+
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <h2 class="text-danger">Học đúng trọng tâm - làm được ngay</h2>
+
+                <div class="noi-dung-gioi-thieu">
+                    <p>
+                        Chào mừng bạn đến với website khóa học trực tuyến.
+                        Chúng tôi cung cấp các khóa học hữu ích, giúp người học
+                        nâng cao kiến thức và phát triển kỹ năng.
+                    </p>
+
+                    <p>
+                        Nội dung học tập được xây dựng dễ hiểu, chú trọng thực
+                        hành và có thể áp dụng vào công việc, học tập hằng ngày.
+                    </p>
+                </div>
+
+                <a href="#khoahoc" class="btn btn-danger mt-2">
+                    Khám phá khóa học
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/anh1.jpg"
+                    alt="Giới thiệu khóa học" class="w-100 rounded">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. ƯU ĐIỂM -->
+    <section class="container py-4">
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="the-uu-diem">
+                    <div class="icon-uu-diem">📚</div>
+                    <div>
+                        <h5>Kiến thức thực tế</h5>
+                        <p>Nội dung dễ hiểu, gắn liền với thực hành.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="the-uu-diem">
+                    <div class="icon-uu-diem">👨‍🏫</div>
+                    <div>
+                        <h5>Giảng viên chất lượng</h5>
+                        <p>Học tập cùng đội ngũ giảng viên giàu kinh nghiệm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="the-uu-diem">
+                    <div class="icon-uu-diem">⏰</div>
+                    <div>
+                        <h5>Học linh hoạt</h5>
+                        <p>Chủ động sắp xếp thời gian học tập.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 5. KHÓA HỌC -->
+    <section id="khoahoc" class="container py-5">
+        <div class="text-center text-danger mb-4">
+            <h2>KHÓA HỌC NỔI BẬT</h2>
+            <p class="text-muted">Lựa chọn khóa học phù hợp với bạn</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x350/0d6efd/ffffff?text=HTML+CSS"
+                        class="card-img-top" alt="Khóa học HTML CSS">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Thiết kế website</h5>
+                        <p class="card-text">
+                            Làm quen với HTML, CSS và xây dựng giao diện website.
+                        </p>
+                        <p class="text-star">★★★★★</p>
+                        <a href="#" class="btn btn-danger">Xem khóa học</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x350/198754/ffffff?text=PYTHON"
+                        class="card-img-top" alt="Khóa học Python">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Lập trình Python</h5>
+                        <p class="card-text">
+                            Học tư duy lập trình và thực hành các chương trình cơ bản.
+                        </p>
+                        <p class="text-star">★★★★★</p>
+                        <a href="#" class="btn btn-danger">Xem khóa học</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/600x350/6f42c1/ffffff?text=MARKETING"
+                        class="card-img-top" alt="Khóa học Marketing">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Marketing cơ bản</h5>
+                        <p class="card-text">
+                            Tìm hiểu cách xây dựng nội dung và tiếp cận khách hàng.
+                        </p>
+                        <p class="text-star">★★★★★</p>
+                        <a href="#" class="btn btn-danger">Xem khóa học</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 6. LÝ DO LỰA CHỌN -->
+    <section class="container py-4">
+        <div class="text-danger text-center">
+            <h2>LÝ DO BẠN NÊN CHỌN CHÚNG TÔI</h2>
+        </div>
+
+        <div class="row pt-3 g-4">
+            <div class="col-md-3 text-center">
+                <div class="ly-do">
+                    <div class="icon-ly-do">🎯</div>
+                    <h5>Đúng mục tiêu</h5>
+                    <p>Chương trình học rõ ràng, có định hướng.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="ly-do">
+                    <div class="icon-ly-do">💻</div>
+                    <h5>Học trực tuyến</h5>
+                    <p>Học tập thuận tiện trên nhiều thiết bị.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="ly-do">
+                    <div class="icon-ly-do">📝</div>
+                    <h5>Nhiều thực hành</h5>
+                    <p>Củng cố kiến thức thông qua bài tập.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="ly-do">
+                    <div class="icon-ly-do">🤝</div>
+                    <h5>Hỗ trợ học tập</h5>
+                    <p>Đồng hành trong quá trình học tập.</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="d-flex align-items-center border border-danger" rounded-2 p-2>
-                    <div>
-                        <img src="" alt="" class="img-gt">
-                    </div>
-                    <div>
-                        <h3>Tối ưu thời gian học</h3>
-                        <p style="text-align: justify;">Nội dung được xây dựng bám sát mục tiêu học tập, giúp học viên tiếp thu nhanh và áp dụng được ngay.</p>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="d-flex align-items-center border border-danger" rounded-2 p-2>
-                    <div>
-                        <img src="" alt="" class="img-gt">
-                    </div>
-                    <div>
-                        <h3>Học mọi lúc mọi nơi</h3>
-                        <p style="text-align: justify;">Chỉ cần điện thoại hoặc máy tính có kết nối Internet, bạn có thể học bất cứ khi nào rảnh, không giới hạn không gian.</p>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="d-flex align-items-center border border-danger" rounded-2 p-2>
-                    <div>
-                        <img src="" alt="" class="img-gt">
-                    </div>
-                    <div>
-                        <h3>Giảng viên đồng hành</h3>
-                        <p style="text-align: justify;">Trong suốt quá trình học, bạn được hướng dẫn chi tiết, giải đáp thắc mắc và hỗ trợ kịp thời khi gặp khó khăn.</p>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <section>
-        <div class="container">
-            <div class="text-danger text-center">
-                <h2>KHÓA HỌC NỔI BẬT</h2>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="" class="carfd-img-top" alt="...">
-                        <div class="card-body">
-                        <h3 class="card-title fs-5">Xây dựng cỗ máy kiếm tiền tự động trên Shopee</h3>
-                        <p class="card-text">Hướng dẫn xây dựng hệ thống bán hàng tự động trên Shopee giúp tạo thu nhập bền vững cho bạn</p>
-                        <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <span class="ms-2 text secondary">4.4</span>
-                        <span class="ms-1 text secondary">(390)</span>
-                        </div>
-                        <div class="d-flex align-items-baseline gap-2 mt-1">
-                            <span class="text-danger"><b>199.000<u>đ</u></b></span>
-                            <span class="text-decoration-line-through text-secondary">450.000<u>đ</u></span>
-                        </div>
-                        <div class="text-center">
-                            <a href="#" class="btn-primary mt-2">Xem chi tiết khóa học</a>
-                        </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="" class="carfd-img-top" alt="...">
-                        <div class="card-body">
-                        <h3 class="card-title fs-5">Khám phá 30 tuyệt chiêu tăng doanh số ngay lập tức</h3>
-                        <p class="card-text">Tổng hợp 30 tuyệt chiêu tăng doanh số ngay lập tức.Khóa học đã được kiểm chứng trong kinh doanh.</p>
-                        <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <span class="ms-2 text secondary">4.8</span>
-                        <span class="ms-1 text secondary">(450)</span>
-                        </div>
-                        <div class="d-flex align-items-baseline gap-2 mt-1">
-                            <span class="text-danger"><b>299.000<u>đ</u></b></span>
-                            <span class="text-decoration-line-through text-secondary">490.000<u>đ</u></span>
-                        </div>
-                        <div class="text-center">
-                            <a href="#" class="btn-primary mt-2">Xem chi tiết khóa học</a>
-                        </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="" class="carfd-img-top" alt="...">
-                        <div class="card-body">
-                        <h3 class="card-title fs-5">Khám phá 20 chiến lược làm giàu hiệu quả</h3>
-                        <p class="card-text">20 chiến lược làm giàu giúp bạn tư duy đúng và hành động hiệu quả giúp bạn gia tăng thu nhập bền vững.</p>
-                        <div class="d-flex align-items-baseline">
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <i class="fa-solid fa-star text-star"></i>
-                        <span class="ms-2 text secondary">4.3</span>
-                        <span class="ms-1 text secondary">(250)</span>
-                        </div>
-                        <div class="d-flex align-items-baseline gap-2 mt-1">
-                            <span class="text-danger"><b>299.000<u>đ</u></b></span>
-                            <span class="text-decoration-line-through text-secondary">399.000<u>đ</u></span>
-                        </div>
-                        <div class="text-center">
-                            <a href="#" class="btn-primary mt-2">Xem chi tiết khóa học</a>
-                        </div>
-                        </div>
+    <!-- 7. GIẢNG VIÊN -->
+    <section id="giangvien" class="container py-5">
+        <div class="text-danger text-center">
+            <h2>GIẢNG VIÊN TIÊU BIỂU</h2>
+        </div>
 
-                    </div>
-                </div>
+        <div class="row pt-3 g-4">
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+1"
+                    alt="Giảng viên 1" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Nguyễn Minh An</h4>
+                <p class="text-muted">HTML, CSS</p>
             </div>
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+2"
+                    alt="Giảng viên 2" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Trần Hoàng Nam</h4>
+                <p class="text-muted">Python</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+3"
+                    alt="Giảng viên 3" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Lê Thu Hà</h4>
+                <p class="text-muted">Marketing</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+4"
+                    alt="Giảng viên 4" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Phạm Đức Long</h4>
+                <p class="text-muted">Lập trình web</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+5"
+                    alt="Giảng viên 5" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Vũ Ngọc Mai</h4>
+                <p class="text-muted">Thiết kế</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img src="https://placehold.co/200x200/adb5bd/ffffff?text=GV+6"
+                    alt="Giảng viên 6" class="img-gv rounded-circle border border-3 border-secondary">
+                <h4 class="fs-5 mt-3">Đỗ Quang Huy</h4>
+                <p class="text-muted">Kỹ năng số</p>
+            </div>
+
         </div>
     </section>
-    <section>
+
+
+    <!-- 8. CHÂN TRANG -->
+    <footer id="lienhe" class="text-white bg-dark mt-3">
         <div class="container py-4">
-            <div class="text-danger text-center">
-                <h3>LÝ DO BẠN NÊN LỰA CHỌN KHÓA HỌC CỦA CHÚNG TÔI.</h3>
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <img src="" alt="" class="img-logo1 mb-3">
-                    <h4>Uy tín - Chất lượng</h4>
-                    <p>Được học thử trước khi thanh toán - Hoàn tiền khóa học nếu không đúng như mô tả!</p>
+            <div class="row g-4">
+
+                <div class="col-md-4 px-4">
+                    <img src="images/logo.jpg" alt="Logo website" class="img-logo">
+                    <p class="mt-3">
+                        Website bán khóa học với đội ngũ giảng viên chất lượng.
+                        Học tập hiệu quả, linh hoạt và thuận tiện.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="fs-5">DANH MỤC KHÓA HỌC</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#khoahoc">Công nghệ thông tin</a></li>
+                        <li><a href="#khoahoc">Kinh doanh khởi nghiệp</a></li>
+                        <li><a href="#khoahoc">Marketing</a></li>
+                        <li><a href="#khoahoc">Phát triển bản thân</a></li>
+                        <li><a href="#khoahoc">Các khóa học khác</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fs-6">KẾT NỐI VỚI CHÚNG TÔI</h5>
+
+                    <a href="#" class="btn btn-sm btn-primary rounded-pill">Facebook</a>
+                    <a href="#" class="btn btn-sm btn-success rounded-pill">Twitter</a>
+                    <a href="#" class="btn btn-sm btn-danger rounded-pill">YouTube</a>
+
+                    <h6 class="mt-4">NHẬN TIN KHUYẾN MÃI</h6>
+
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control"
+                                placeholder="Nhập Email của bạn"
+                                aria-label="Email của bạn">
+
+                            <button class="btn btn-danger" type="submit">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
+
+            <hr>
+            <p class="text-center mb-0">
+                © 2026 Website khóa học. Bản quyền thuộc về chúng tôi.
+            </p>
         </div>
-        <div class="container py-4">
-            <div class="text-danger text-center">
-                <h3>LÝ DO BẠN NÊN LỰA CHỌN KHÓA HỌC CỦA CHÚNG TÔI.</h3>
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <img src="" alt="" class="img-logo1 mb-3">
-                    <h4>Uy tín - Chất lượng</h4>
-                    <p>Được học thử trước khi thanh toán - Hoàn tiền khóa học nếu không đúng như mô tả!</p>
-                </div>
+    </footer>
 
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <img src="" alt="" class="img-logo1 mb-3">
-                    <h4>Kích hoạt nhanh chóng</h4>
-                    <p>Học online ngay tại website sau khi thanh toán trong vòng 3-5 phút! Duyệt tự động khóa học.</p>
-                </div>
 
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <img src="" alt="" class="img-logo1 mb-3">
-                    <h4>Tiết kiệm chi phí</h4>
-                    <p>Cam kết Học phí tối ưu với nhiều ưu đãi hấp dẫn, không phát sinh thêm bất kỳ khoản phí nào.</p>
-                </div>
+    <!-- MÔ TẢ: DÁN LINK BOOTSTRAP BUNDLE JAVASCRIPT BẠN TỰ LẤY -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <img src="" alt="" class="img-logo1 mb-3">
-                    <h4>Hỗ trợ 24/7</h4>
-                    <p>Đội ngũ tư vấn sẵn sàng giải đáp và hỗ trợ mọi thắc mắc cảu bạn mọi lúc, mọi nơi.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <section>
-        <div class="container py-2">
-            <div class="text-danger text-center">
-                <h3>GIẢNG VIÊN TIÊU BIỂU</h3>
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Nguyễn Thị Hà</h4>
-                    <p>Graphic Designer</p>
-                </div> 
-
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Trần Hải Yến</h4>
-                    <p>Marketing Manager</p>
-                </div> 
-
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Hồ Thị Mai</h4>
-                    <p>Lead UI/UX Designer</p>
-                </div> 
-
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Vũ Thị Linh</h4>
-                    <p>Cố vấn tài chính</p>
-                </div> 
-
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Lê Thị Hằng</h4>
-                    <p>Cố vấn giao tiếp</p>
-                </div> 
-
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-4 col-lg-2 text-center">
-                    <img src="" alt="" class="img-gv rounded-circle border border-3 border-secondary">
-                    <h4 class="fs-5 mt-3">Lê Thị Nhung</h4>
-                    <p>Web Developer</p>
-                </div> 
-
-            </div>
-        </div>
-    </section>
-    <footer class="text-white bg-dark mt-3"> 
-<div class="container py-3"> 
-<div class="row"> 
-<div class="col-md-4 px-4"> 
-<img src="Images/logo.png" alt="" class="img-logo"> 
-<p>Website bán khóa học với đội ngũ giảng viên chất lượng. Làm việc với tiêu 
-chí uy tín, hiệu quả và nhanh chóng.</p> 
-</div> 
-<div class="col-md-4"> 
-<h4 class="fs-5">DANH MỤC KHOÁ HỌC</h4> 
-<ul class="list-unstyled"> 
-<li><a href="#">Công nghệ thông tin</a></li> 
-<li><a href="#">Kinh doanh khởi nghiệp</a></li> 
-<li><a href="#">Marketing</a></li> 
-<li><a href="#">Phát triển bản thân</a></li> 
-<li><a href="#">Các khoá học khác</a></li> 
-</ul> 
-</div> 
-<div class="col-md-4"> 
-<h5 class="fs-6">Kết nối với chúng tôi</h5> 
-<a href="#" class="btn btn-sm btn-primary rounded-pill"><i class="fa-brands 
-fa-square-facebook" style="color: rgb(255, 255, 255);"></i> Facebook</a> 
-<a href="#" class="btn btn-sm btn-success rounded-pill"><i class="fa-brands fa
-twitter" style="color: rgb(255, 255, 255);"></i> Twitter</a> 
-<a href="#" class="btn btn-sm btn-danger rounded-pill"><i class="fa-brands fa
-youtube" style="color: rgb(255, 255, 255);"></i> YouTube</a> 
-<h6 class="mt-3">NHẬN TIN KHUYẾN MÃI</h6> 
-<div class="input-group mb-3"> 
-<input type="text" class="form-control" placeholder="Nhập Email của bạn" aria
-label="Email của bạn" aria-describedby="basic-addon2"> 
-<span class="input-group-text bg-danger" id="basic-addon2">Đăng ký</span> 
-</div> 
-</div> 
-</div> 
-</div> 
-</footer>  
 </body>
 </html>
